@@ -123,6 +123,17 @@ p {
   background: #1da852 !important;
 }
 
+.btn-outline {
+  background: transparent !important;
+  color: var(--accent) !important;
+  border: 2px solid var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent) !important;
+  color: var(--primary) !important;
+}
+
 .btn-large {
   padding: 18px 40px;
   font-size: 1.2rem;
@@ -170,6 +181,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .hero-image img {
@@ -232,7 +244,7 @@ p {
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* =======================
