@@ -1,0 +1,475 @@
+/* =======================
+   my_landing_page.css
+   Landing Page for Amer Abdo - Full-Stack Developer
+   Author: Amer Developer
+   ======================= */
+
+:root {
+  --primary: #000033;
+  --accent: #00FFFF;
+  --accent-hover: #00cccc;
+  --text: #ffffff;
+  --text-gray: #cccccc;
+  --bg-dark: #000022;
+  --card-bg: rgba(0, 0, 51, 0.8);
+  --border: 1px solid var(--accent);
+  --radius: 16px;
+  --shadow: 0 8px 32px rgba(0, 255, 255, 0.15);
+  --transition: all 0.4s ease;
+  --space: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary);
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =======================
+   Typography
+   ======================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--accent);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* =======================
+   Buttons
+   ======================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: var(--accent);
+  color: var(--primary) !important;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+  transition: var(--transition);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.4);
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: #25D366 !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
+  background: #1da852 !important;
+}
+
+.btn-large {
+  padding: 18px 40px;
+  font-size: 1.2rem;
+}
+
+.btn-whatsapp {
+  background: #25D366 !important;
+  color: white !important;
+}
+
+/* =======================
+   Hero Section
+   ======================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-xl) 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 30%, rgba(0, 255, 255, 0.1), transparent 40%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  object-fit: cover;
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.4);
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 80px rgba(0, 255, 255, 0.6);
+  }
+}
+
+/* =======================
+   Highlight & Glow
+   ======================= */
+.highlight {
+  color: var(--accent);
+  position: relative;
+  font-weight: 700;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 255, 255, 0.2);
+  z-index: -1;
+  border-radius: 4px;
+  filter: blur(4px);
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  max-width: 600px;
+  margin-bottom: var(--space-lg);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* =======================
+   Sections
+   ======================= */
+.section {
+  padding: var(--space-xl) 0;
+  background: var(--bg-dark);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto var(--space-lg);
+}
+
+/* =======================
+   About Section
+   ======================= */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.glow-ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: rotate 10s linear infinite;
+  z-index: -1;
+}
+
+.glow-ring::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.about-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+/* =======================
+   Services Section
+   ======================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: var(--space-lg);
+}
+
+.service-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.25);
+  border-color: rgba(0, 255, 255, 0.5);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* =======================
+   Contact Section
+   ======================= */
+.contact-options {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: var(--space);
+  color: var(--text-gray);
+}
+
+.qr-code img {
+  width: 140px;
+  height: 140px;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+/* =======================
+   Footer
+   ======================= */
+footer {
+  background: var(--primary);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--accent-hover);
+  transform: translateY(-3px);
+}
+
+/* =======================
+   Toast Notification
+   ======================= */
+#toast {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  background: var(--accent);
+  color: var(--primary);
+  padding: 16px 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+  z-index: 3000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =======================
+   Responsive Design
+   ======================= */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-buttons {
+    justify-content: center;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    order: 1;
+  }
+  .about-image {
+    order: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+  .hero-image img, .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}

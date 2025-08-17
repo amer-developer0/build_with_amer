@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amer Abdo | Professional Full-Stack Developer & AI Solutions Builder" />
+  <meta name="keywords" content="web developer, landing page, full-stack, Egypt, HTML, CSS, JavaScript, Python, portfolio" />
+  <meta name="author" content="Amer Abdo" />
+  <meta name="theme-color" content="#000033" />
+  <title>Amer Abdo | Professional Web Developer & Full-Stack Engineer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="my_landing_page.css" />
+
+  <!-- Inline Critical CSS (for fast loading) -->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    [data-animate] {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    [data-animate="1"] { animation-delay: 0.2s; }
+    [data-animate="2"] { animation-delay: 0.4s; }
+    [data-animate="3"] { animation-delay: 0.6s; }
+    [data-animate="4"] { animation-delay: 0.8s; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-animate="1">Hi, I'm <strong class="highlight">Amer Abdo</strong></h1>
+        <p class="subtitle" data-animate="2">Full-Stack Developer & AI-Powered Solution Builder</p>
+        <p class="description" data-animate="3">
+          I build digital solutions that help you appear professionally and effectively in the digital market.
+        </p>
+        <div class="cta-buttons" data-animate="4">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </a>
+          <a href="https://wa.me/201032637977" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-whatsapp"></i> WhatsApp Me
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" data-animate="2">
+        <img src="logo.png" alt="Amer Abdo - Web Developer" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 data-animate="1">About Me</h2>
+          <p data-animate="2">
+            I'm a web developer and programmer from Egypt 🇪🇬, passionate about turning ideas into practical and effective digital solutions.
+          </p>
+          <p data-animate="3">
+            I specialize in designing and coding modern, responsive websites with a strong focus on user experience and fine details.
+          </p>
+          <p data-animate="4">
+            I master HTML, CSS, JavaScript, and Python to create professional interfaces and smart tools that solve real-world problems.
+          </p>
+        </div>
+        <div class="about-image" data-animate="2">
+          <div class="glow-ring"></div>
+          <img src="logo.png" alt="Amer Abdo Portrait" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title" data-animate="1">My Services</h2>
+      <div class="services-grid">
+        <div class="service-card" data-animate="2">
+          <i class="fas fa-rocket service-icon"></i>
+          <h3>Landing Pages</h3>
+          <p>Professional landing pages to increase conversions and engagement.</p>
+        </div>
+        <div class="service-card" data-animate="3">
+          <i class="fas fa-globe service-icon"></i>
+          <h3>Websites</h3>
+          <p>Modern, fast, and user-friendly websites for your business or brand.</p>
+        </div>
+        <div class="service-card" data-animate="4">
+          <i class="fas fa-robot service-icon"></i>
+          <h3>Python Scripts</h3>
+          <p>Automation and data analysis scripts to save time and boost productivity.</p>
+        </div>
+        <div class="service-card" data-animate="5">
+          <i class="fas fa-shield-alt service-icon"></i>
+          <h3>Support & Maintenance</h3>
+          <p>Technical support and regular maintenance for stability and security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-animate="1">Let's Work Together</h2>
+      <p class="section-subtitle" data-animate="2">
+        I'm available for collaboration and new projects. Feel free to reach out for any inquiries or job offers.
+      </p>
+      <div class="contact-options" data-animate="3">
+        <a href="https://wa.me/201032637977" target="_blank" class="btn btn-large btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp Me
+        </a>
+        <a href="mailto:iamamer030@gmail.com" target="_blank" class="btn btn-large btn-email">
+          <i class="fas fa-envelope"></i> Send Email
+        </a>
+      </div>
+      <div class="qr-code" data-animate="4">
+        <p>Scan to chat on WhatsApp:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/201032637977" alt="WhatsApp QR Code" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year">2025</span> Amer Abdo. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/amer-developer0" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/amer_aeveloper" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/Amer221534" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://tiktok.com/@amer.developer8" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast">Action completed!</div>
+
+  <!-- External JS -->
+  <script src="my_landing_page.js" defer></script>
+</body>
+</html>
