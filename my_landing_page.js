@@ -1,6 +1,6 @@
 /**
  * my_landing_page.js
- * Interactive Script for Amer Abdo's Landing Page
+ * Interactive Script for Amer's Landing Page
  * Features: Smooth animations, toast notifications, scroll effects, language switcher
  */
 
@@ -10,8 +10,9 @@
 const translations = {
   ar: {
     'Hello, I\'m': 'مرحبًا، أنا',
-    'Full-Stack Developer & AI-Powered Solution Builder': 'مطوّر متكامل وبناء حلول مدعومة بالذكاء الاصطناعي',
-    'I build digital solutions that help you appear professionally and effectively in the digital market.': 'أبني حلولًا رقمية تساعدك على الظهور بشكل احترافي وفعّال في السوق الرقمي.',
+    'Amer': 'عامر',
+    'Full-Stack Developer & AI-Powered Solution Builder': 'مطوّر ويب محترف ومتخصص في تصميم المواقع العصرية',
+    'I build digital solutions that help you appear professionally and effectively in the digital market.': 'أصمم مواقع إلكترونية عصرية وسريعة تُبرز هويتك بوضوح وتحسن تجربة الزائر.',
     'Get in Touch': 'اتصل بي',
     'WhatsApp Me': 'تواصل عبر واتساب',
     'Visit My Portfolio': 'زيارة موقعي',
@@ -31,8 +32,9 @@ const translations = {
   },
   en: {
     'Hello, I\'m': 'Hello, I\'m',
-    'Full-Stack Developer & AI-Powered Solution Builder': 'Full-Stack Developer & AI-Powered Solution Builder',
-    'I build digital solutions that help you appear professionally and effectively in the digital market.': 'I build digital solutions that help you appear professionally and effectively in the digital market.',
+    'Amer': 'Amer',
+    'Full-Stack Developer & AI-Powered Solution Builder': 'Professional Web Developer & Creator of Modern, Responsive Websites',
+    'I build digital solutions that help you appear professionally and effectively in the digital market.': 'I design modern, fast websites that clearly represent your brand and improve user experience.',
     'Get in Touch': 'Get in Touch',
     'WhatsApp Me': 'WhatsApp Me',
     'Visit My Portfolio': 'Visit My Portfolio',
