@@ -11,6 +11,7 @@ const translations = {
   ar: {
     'Hello, I\'m': 'مرحبًا، أنا',
     'Amer': 'عامر',
+    'My Services': 'خدماتي',
     'Full-Stack Developer & AI-Powered Solution Builder': 'مطوّر ويب محترف ومتخصص في تصميم المواقع العصرية',
     'I build digital solutions that help you appear professionally and effectively in the digital market.': 'أصمم مواقع إلكترونية عصرية وسريعة تُبرز هويتك بوضوح وتحسن تجربة الزائر.',
     'Get in Touch': 'اتصل بي',
@@ -33,6 +34,7 @@ const translations = {
   en: {
     'Hello, I\'m': 'Hello, I\'m',
     'Amer': 'Amer',
+    'My Services': 'My Services',
     'Full-Stack Developer & AI-Powered Solution Builder': 'Professional Web Developer & Creator of Modern, Responsive Websites',
     'I build digital solutions that help you appear professionally and effectively in the digital market.': 'I design modern, fast websites that clearly represent your brand and improve user experience.',
     'Get in Touch': 'Get in Touch',
